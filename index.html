@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sattaku1538 Portfolio</title>
+  <!-- ↓↓ショートカットアイコン用 -->
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <!-- ↓↓ブラウザに元々指定されているCSSを一旦「リセット」することで、デザイン崩れを予防する効果 -->
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <!-- ↓↓SlickSliderの見た目をやるやつ -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+  <!-- ↓↓CSSの記述 -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- ↓↓Ajax非同期通信の処理 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- ↓↓SlickSliderを動かすやつ。画像や動画などのWebコンテンツを配信する仕組みのこと。 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <!-- ↓↓JavaScriptのJquery記述 -->
+  <script src="js/main.js"></script>
+</head>
+  <body>
+    <header id="header">
+      <h1 class="site-title">
+        <a href="index.html"><img src="img/logo.png" alt="Ssattaku1538"></a>
+      </h1>
+<!-- ↓↓ハンバーメニュー -->
+      <nav id="navi">
+        <ul class="nav-menu">
+          <li><a href="#viewakita">AKITA</a></li>
+          <li><a href="#collection">COLLECTION</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+        <ul class="nav-sns">
+          <li><a href="https://mobile.twitter.com/sattaku1538" target="_blank">Twitter</a></li>
+          <li><a href="https://www.facebook.com/sattaku.sattaku" target="_blank">Facebook</a></li>
+          <li><a href="https://sattaku1538.lsv.jp/" target="_blank">Myblog</a></li>
+        </ul>
+      </nav>
+<!-- ↓↓右上のクリックする棒 -->
+      <div class="toggle_btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+<!-- ↓↓header全体を網羅している -->
+      <div id="mask"></div>
+    </header>
+
+<!-- ↓↓Main開始 -->
+    <main id="main">
+<!-- ↓↓Videoの部分 -->
+      <div id="video">
+        <video id="videomain" src="video/videomain.mp4" loop autoplay muted playsinline></video>
+      </div>
+<!-- ↓↓画像が並んでいる -->
+      <section id="viewakita">
+        <h2 class="sec-title">トンネルを抜けるとそこは秋田だった。</h2>
+        <ul class="slick-area">
+          <li><img src="img/akita1.jpg" alt="秋田あきた風景１　四季折々秋田の写真"></li>
+          <li><img src="img/akita2.jpg" alt="秋田あきた風景２　四季折々秋田の写真"></li>
+          <li><img src="img/akita3.jpg" alt="秋田あきた風景３　四季折々秋田の写真"></li>
+          <li><img src="img/akita4.jpg" alt="秋田あきた風景４　四季折々秋田の写真"></li>
+          <li><img src="img/akita5.jpg" alt="秋田あきた風景５　四季折々秋田の写真"></li>
+          <li><img src="img/akita6.jpg" alt="秋田あきた風景６　四季折々秋田の写真"></li>
+          <li><img src="img/akita7.jpg" alt="秋田あきた風景７　四季折々秋田の写真"></li>
+          <li><img src="img/akita8.jpg" alt="秋田あきた風景８　四季折々秋田の写真"></li>
+          <li><img src="img/akita9.jpg" alt="秋田あきた風景９　四季折々秋田の写真"></li>
+        </ul>
+      </section>
+
+      <section id="collection">
+        <h2 class="sec-title">PHOTO COLLECTION</h2>
+        <div class="grid">
+
+          <div class="item">
+            <img class="fadein" src="img/akita10.jpg" alt="akita">
+            <div class="item-content">
+              <p class="item-cat">agriculture</p>
+              <p class="item-text">秋田で栽培されているオクラの花です。オクラの花ってこんな感じに咲くんです。</p>
+              <p class="item-date">投稿日：2022.xx.xx</p>
+            </div>
+          </div>
+        
+          <div class="item">
+            <img class="fadein" src="img/akita11.jpg" alt="akita">
+            <div class="item-content">
+              <p class="item-cat">agriculture</p>
+              <p class="item-text">里いもの茎と葉っぱです。根っこの部分が里いもとして食用します。</p>
+              <p class="item-date">投稿日：2022.xx.xx</p>
+            </div>
+          </div>
+        
+          <div class="item">
+            <img class="fadein" src="img/akita12.jpg" alt="akita">
+            <div class="item-content">
+              <p class="item-cat">agriculture</p>
+              <p class="item-text">モロヘイヤの葉っぱです。葉っぱが密になっていますが、先端はまっすぐ、太陽を目指しています。</p>
+              <p class="item-date">投稿日：2022.xx.xx</p>
+            </div>
+          </div>
+        
+          <div class="item">
+            <img class="fadein" src="img/akita13.jpg" alt="akita">
+            <div class="item-content">
+              <p class="item-cat">agriculture</p>
+              <p class="item-text">モロヘイヤが植わっている様子です。角館の武家屋敷の境界線に植えるもみじように植えて行きます。</p>
+              <p class="item-date">投稿日：2022.xx.xx</p>
+            </div>
+          </div>
+        
+          <div class="item">
+            <img class="fadein" src="img/akita14.jpg" alt="akita">
+            <div class="item-content">
+              <p class="item-cat">agriculture</p>
+              <p class="item-text">コンバインでお米の収穫をしています。秋頃は朝露が多いので、露が乾く10時頃から始めたりします。</p>
+              <p class="item-date">投稿日：2022.xx.xx</p>
+            </div>
+          </div>
+        
+          <div class="item">
+            <img class="fadein" src="img/akita15.jpg" alt="akita">
+            <div class="item-content">
+              <p class="item-cat">agriculture</p>
+              <p class="item-text">稲の葉色、穂の垂れ具合が収穫時期のタイミングです。収穫面積と面積当たりの作業時間を計算して、いつ頃から刈を始めるかを考えます。</p>
+              <p class="item-date">投稿日：2021.04.21</p>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2 class="sec-title">問い合わせ</h2>
+        <div class="content">
+          <div class="contact-info">
+            <p>このサイトは秋田の魅力を伝えていくサイトです。</p>
+            <p>
+              秋田の風景や農業の風景をみんなに共有するためにサイトを運営しています。
+              興味や質問がある方は問い合わせフォームでご連絡ください。
+            </p>
+          </div>
+
+          <div class="contact-form">
+            <form action="#">
+              <dl>
+                <dt><label for="name">Name:</label></dt>
+                <dd><input type="text" id="name" name="your-name"></dd>
+                <dt><label for="email">Mail:</label></dt>
+                <dd><input type="email" id="email" name="your-email"></dd>
+                <dt><label for="message">Message:</label></dt>
+                <dd><textarea id="message" name="your-message"></textarea></dd>
+              </dl>
+              <div class="button"><input type="submit" value="送信"></div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <p>&copy; sattaku1538</p>
+    </footer>
+
+  </body>
+</html>
